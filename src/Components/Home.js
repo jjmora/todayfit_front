@@ -2,9 +2,10 @@ import React from 'react'
 import Card from './Card'
 import { Hero } from './Hero'
 import Features from './Features'
+import Pagination from './Pagination'
 const Home = () => {
   return (
-    <section className='main-section'>
+    <section>
       {/* HERO SECTION */}
       <Hero />
       {/* HERO SECTION  */}
@@ -15,6 +16,10 @@ const Home = () => {
 
       {/* CARD SECTION */}
       <Card />
+      {/* CARD SECTION */}
+
+      {/* CARD SECTION */}
+      <Pagination />
       {/* CARD SECTION */}
     </section>
   )

@@ -8,6 +8,16 @@ const Card = () => {
   return (
     <section className='container card-section d-flex justify-content-center my-5'>
       <div className='row'>
+        <div className='d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between mb-4'>
+          <div className='d-flex flex-column flex-lg-row'>
+            <h2 className="fw-bold lh-1 mb-0 me-md-3 text-uppercase">LE CLUB</h2>
+            <h2 className="fw-bold lh-1 mb-4 mb-sm-0 text-uppercase strokeme">PROCHE DE TOI</h2>
+          </div>
+          <form className="d-flex mb-0 align-items-center">
+            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button className="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
         <div className='col-md-6 col-lg-4'>
           <CardUI 
             imagesrc={image1} 

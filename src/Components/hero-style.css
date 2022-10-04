@@ -1,12 +1,13 @@
 .hero-section{
-  background-color: whitesmoke;
+  max-width: 1400px;
 }
 
 .lead{
   text-align: justify;
 }
 
-.hero-section h1{
-  font-size: 2.5rem;
-  font-family: 'Russo One', sans-serif;
+.strokeme {
+  color: #fafafa;
+  /* text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000; */
+  -webkit-text-stroke: 0.5px black;
 }
