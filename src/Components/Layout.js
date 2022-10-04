@@ -5,12 +5,12 @@ import NavBar from './NavBar'
 
 const Layout = () => {
   return (
-    <main>
+    <div className='body'>
       <NavBar />    
       {/* OUTLET Represents all the children of the Layout component */}
       <Outlet /> 
       <Footer />
-    </main>
+    </div>
   )
 }
 

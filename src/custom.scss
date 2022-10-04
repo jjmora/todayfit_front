@@ -1,0 +1,6 @@
+// Override default variables before the import
+$primary: orange;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
