@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import Card from './Card'
-import { Hero } from './Hero'
-import Features from './Features'
-import Pagination from './Pagination'
+import Card from '../components/Card/Card'
+import { Hero } from '../components/Hero/Hero'
+import Features from '../components/Features/Features'
+import Pagination from '../components/Pagination'
 
 const Home = () => {
  

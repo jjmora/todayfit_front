@@ -15,7 +15,7 @@ const CardUI = (props) => {
         </div>
       </div>
       <div className='card-body text-dark'>
-        <p className='card-text text-secondary'>
+        <p className='card-text text-secondary pt-4 text-justify'>
           {props.text}
         </p>
         <div className='text-end px-5'>

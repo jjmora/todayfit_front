@@ -8,7 +8,7 @@ const BlogPostCard = (props) => {
           <strong className="d-inline-block mb-2 text-primary">{props.category}</strong>
           <h3 className="mb-0">{props.title}</h3>
           <div className="mb-1 text-muted">{props.date}</div>
-          <p className="card-text mb-auto">{props.text}</p>
+          <p className="card-text mb-auto text-justify">{props.text}</p>
           <a href="/blog/article" className="stretched-link">Continue reading</a>
         </div>
         <div className="col-4">

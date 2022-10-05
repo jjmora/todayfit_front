@@ -1,8 +1,8 @@
 import React from 'react'
 import CardUI from './CardUI'
-import image1 from '../assets/images/gym1.jpg'
-import image2 from '../assets/images/gym2.jpg'
-import image3 from '../assets/images/gym3.jpg'
+import image1 from '../../assets/images/gym1.jpg'
+import image2 from '../../assets/images/gym2.jpg'
+import image3 from '../../assets/images/gym3.jpg'
 
 const Card = () => {
   return (

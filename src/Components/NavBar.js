@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import logo from '../assets/images/logo_sm.png';
 
 const NavBar = () => {
+
+  const [ isFranchise, setIsFranchise] = useState(true)
+
+  const toggleFranchise = () => {
+    setIsFranchise(!isFranchise)
+  }
   return (
     <>
       <div className="container-fluid bg-warning text-center py-1"><i>Ce site web est une site de démonstration</i></div>
@@ -18,15 +24,35 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className='nav-item'>
+                <Link className="nav-link" aria-current="page" to="/clubs">Clubs</Link>
+              </li>
+              <li className='nav-item'>
                 <Link className="nav-link" aria-current="page" to="/blog">Blog</Link>
               </li>
               <li className='nav-item'>
-                <Link className="nav-link" aria-current="page" to="/">Home</Link>
-              </li>
-              <li className='nav-item'>
-                <Link className="nav-link" aria-current="page" to="/">Home</Link>
+                <Link className="nav-link" aria-current="page" to="/contact">Contact</Link>
               </li>
             </ul>
+            <button className='btn btn-info mx-5' onClick={toggleFranchise}>Toggle</button>
+            <section className='border rounded border-1 border-danger px-2 bg-warning fw-bold'>
+              {/* Si je suis une franchise => je dois voir ma franchise + mes structures */}
+              {/* Si je suis une structure => je dois voir mon structure */}
+              
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                { isFranchise ? (
+                  <li className='nav-item'>
+                    <Link className="nav-link" aria-current="page" to="/franchise">Ma Franchise et mes Structures</Link>
+                  </li>)
+                  : (
+                  <li className='nav-item'>
+                    <Link className="nav-link" aria-current="page" to="/structures">Mes Structures</Link>
+                  </li>)
+                }
+                
+
+              </ul>
+            </section>
+
             <Link className="navbar-brand" to="/login">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-person-circle mx-3" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
