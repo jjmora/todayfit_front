@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Card from './Card'
 import { Hero } from './Hero'
 import Features from './Features'
 import Pagination from './Pagination'
+
 const Home = () => {
+ 
   return (
     <section>
       {/* HERO SECTION */}

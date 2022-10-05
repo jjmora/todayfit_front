@@ -8,7 +8,7 @@ const Features = () => {
         <div className="row flex-lg-row-reverse row-cols-1 row-cols-sm-2 g-4">
           <div className="d-flex flex-column gap-2">
             <div className="text-bg-primary bg-gradient px-3 py-2 rounded-3 align-self-start">
-              <i class="bi bi-universal-access"></i>
+              <i className="bi bi-universal-access"></i>
             </div>
             <h4 className="fw-semibold mb-0">Featured title</h4>
             <p className="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
@@ -16,7 +16,7 @@ const Features = () => {
 
           <div className="d-flex flex-column gap-2">
             <div className="text-bg-primary bg-gradient px-3 py-2 rounded-3 align-self-start">
-              <i class="bi bi-toggles2"></i>
+              <i className="bi bi-toggles2"></i>
             </div>
             <h4 className="fw-semibold mb-0">Featured title</h4>
             <p className="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
@@ -24,7 +24,7 @@ const Features = () => {
 
           <div className="d-flex flex-column gap-2">
             <div className="text-bg-primary bg-gradient px-3 py-2 rounded-3 align-self-start">
-              <i class="bi bi-trophy"></i>
+              <i className="bi bi-trophy"></i>
             </div>
             <h4 className="fw-semibold mb-0">Featured title</h4>
             <p className="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
@@ -32,7 +32,7 @@ const Features = () => {
 
           <div className="d-flex flex-column gap-2">
             <div className="text-bg-primary bg-gradient px-3 py-2 rounded-3 align-self-start">
-              <i class="bi bi-calendar-week"></i>
+              <i className="bi bi-calendar-week"></i>
             </div>
             <h4 className="fw-semibold mb-0">Featured title</h4>
             <p className="text-muted">Paragraph of text beneath the heading to explain the heading.</p>

@@ -1,0 +1,10 @@
+.article-image{
+  height: 300px;
+  object-fit: cover;
+}
+
+.article-image-post{
+  object-fit: cover;
+  height: 350px;
+  width: 100%;
+}

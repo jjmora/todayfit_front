@@ -15,7 +15,7 @@ const Card = () => {
           </div>
           <form className="d-flex mb-0 align-items-center">
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+            <button className="btn btn-outline-success" type="submit"><i className="bi bi-search"></i></button>
           </form>
         </div>
         <div className='col-md-6 col-lg-4'>
