@@ -3,7 +3,9 @@ import Card from '../../components/Card/Card'
 
 const Clubs = () => {
   return (
-    <Card />
+    <Card 
+      header="LES CLUBS"
+    />
   )
 }
 

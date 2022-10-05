@@ -17,7 +17,10 @@ const Home = () => {
       {/* FEATURES SECTION */}
 
       {/* CARD SECTION */}
-      <Card />
+      <Card 
+        header="le club"
+        header_stroke="PROCHE DE TOI"
+      />
       {/* CARD SECTION */}
 
       {/* CARD SECTION */}
