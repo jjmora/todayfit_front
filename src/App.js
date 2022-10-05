@@ -15,25 +15,25 @@ import Store from './contexts/Store';
 
 function App() {
   return (
-        <Store>
-    <Routes>
-      <Route path='/' element={<Layout />} >
-        {/* PUBLIC ROUTES */}
-          <Route path='/' element={<Home />} />
-        <Route path='/club' element={<Club />} />
-        <Route path='/clubs' element={<Clubs />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/blog' element={<Blog />} />
-        <Route path='/blog/article' element={<BlogArticle />} />
+    <Store>
+      <Routes>
+        <Route path='/' element={<Layout />} >
+          {/* PUBLIC ROUTES */}
+            <Route path='/' element={<Home />} />
+          <Route path='/club' element={<Club />} />
+          <Route path='/clubs' element={<Clubs />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/blog' element={<Blog />} />
+          <Route path='/blog/article' element={<BlogArticle />} />
 
-        {/* PROTECTED ROUTES */}
-        <Route path='/franchise' element={<Franchise />} />
-        <Route path='/structure' element={<Structure />} />
-        <Route path='/structures' element={<Structures />} />
-      </Route>
-    </Routes>
-        </Store>
+          {/* PROTECTED ROUTES */}
+          <Route path='/franchise' element={<Franchise />} />
+          <Route path='/structure' element={<Structure />} />
+          <Route path='/structures' element={<Structures />} />
+        </Route>
+      </Routes>
+    </Store>
   );
 }
 

@@ -3,14 +3,12 @@ import { ApiContext } from '../contexts/ApiContext'
 import axios from 'axios'
 
 function Store({ children }) {
-  const [users, setUsers] = useState([])
   const [data, setData] = useState([])
 
   useEffect(() => {
     axios
       .get('https://jsonplaceholder.typicode.com/users')
       .then((res) => {
-        setUsers(res.data)
         setData(res.data)
       })
       .catch((error) => {

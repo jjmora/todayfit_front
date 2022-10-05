@@ -18,7 +18,8 @@ const CardUI = (props) => {
         <p className='card-text text-secondary pt-4 text-justify'>
           {props.text}
         </p>
-        <div className='text-end px-5'>
+        <div className='d-flex justify-content-between px-4'>
+          <small>{props.email}</small>
           <a href={props.link} className='btn btn-outline-success'>
             Go  
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-down-right-circle ms-2" viewBox="0 0 16 16">
