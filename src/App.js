@@ -11,13 +11,15 @@ import Franchise from './pages/Franchise';
 import Structures from './pages/Structures';
 import Structure from './pages/Structure';
 import Club from './pages/Clubs/Club';
+import Store from './contexts/Store';
 
 function App() {
   return (
+        <Store>
     <Routes>
       <Route path='/' element={<Layout />} >
         {/* PUBLIC ROUTES */}
-        <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home />} />
         <Route path='/club' element={<Club />} />
         <Route path='/clubs' element={<Clubs />} />
         <Route path='/login' element={<Login />} />
@@ -31,6 +33,7 @@ function App() {
         <Route path='/structures' element={<Structures />} />
       </Route>
     </Routes>
+        </Store>
   );
 }
 
