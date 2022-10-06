@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import CardUI from './CardUI'
 import image1 from '../../assets/images/gym1.jpg'
 import image2 from '../../assets/images/gym2.jpg'
@@ -10,7 +10,8 @@ const Card = (props) => {
   const [data, setData] = useContext(ApiContext)
 
   useEffect( () => {
-    console.log(data)
+    console.log(data) // returns an object
+    // {@context: '/api/contexts/Partner', @id: '/api/partners', @type: 'hydra:Collection', hydra:member: Array(2), hydra:totalItems: 2}
   }, [data])
 
   return (
@@ -27,15 +28,14 @@ const Card = (props) => {
             <button className="btn btn-outline-success" type="submit"><i className="bi bi-search"></i></button>
           </form>
         </div>
-
         { data.map( (res, id) => {
           return(
             <div className='col-md-6 col-lg-4'>
             <CardUI 
               imagesrc={image1} 
               id={res.id} 
-              title={res.address.city}
-              address={res.address.street}
+              title={res.name}
+              address={res.address}
               email={res.email}
               text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
               link="/club"

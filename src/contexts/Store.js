@@ -7,9 +7,11 @@ function Store({ children }) {
 
   useEffect(() => {
     axios
-      .get('https://jsonplaceholder.typicode.com/users')
+      //.get('https://jsonplaceholder.typicode.com/users')
+      .get('https://admin.jjmdev.xyz/api/partners?page=1')
       .then((res) => {
-        setData(res.data)
+        setData(res.data["hydra:member"])
+        console.log(res.data)
       })
       .catch((error) => {
         console.log(error)

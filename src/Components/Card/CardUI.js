@@ -1,4 +1,5 @@
 import React from 'react'
+import PermissionCard from '../Permission/PermissionCard'
 import './card-style.css'
 
 const CardUI = (props) => {
@@ -18,6 +19,45 @@ const CardUI = (props) => {
         <p className='card-text text-secondary pt-4 text-justify'>
           {props.text}
         </p>
+        <div className="d-flex flex-row flex-wrap">
+          
+          {/* > PERMISSION CARD  */}
+            <PermissionCard 
+              class="fa-solid fa-dumbbell text-primary fs-4"
+              text="Salle de Sport"
+            />
+          {/* < PERMISSION CARD  */}
+
+                    {/* > PERMISSION CARD  */}
+                    <PermissionCard 
+              class="fa-solid fa-dumbbell text-primary fs-4"
+              text="Salle de Sport"
+            />
+          {/* < PERMISSION CARD  */}
+
+                    {/* > PERMISSION CARD  */}
+                    <PermissionCard 
+              class="fa-solid fa-dumbbell text-primary fs-4"
+              text="Salle de Sport"
+            />
+          {/* < PERMISSION CARD  */}
+
+                    {/* > PERMISSION CARD  */}
+                    <PermissionCard 
+              class="fa-solid fa-dumbbell text-primary fs-4"
+              text="Salle de Sport"
+            />
+          {/* < PERMISSION CARD  */}
+
+                    {/* > PERMISSION CARD  */}
+                    <PermissionCard 
+              class="fa-solid fa-dumbbell text-primary fs-4"
+              text="Salle de Sport"
+            />
+          {/* < PERMISSION CARD  */}
+
+        </div>
+
         <div className='d-flex justify-content-between px-4'>
           <small>{props.email}</small>
           <a href={props.link} className='btn btn-outline-success'>
