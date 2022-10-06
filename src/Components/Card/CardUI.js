@@ -4,32 +4,36 @@ import './card-style.css'
 
 const CardUI = (props) => {
   return (
-    <div className='card shadow'>
-      <div className='overflow'>
-        <img src={props.imagesrc} alt='' className='card-img-top'/>
+    <div className={props.active ? ('card shadow') : ('card shadow no-active')}>
+      <div className="overflow image-container">
+        {props.active ? ("") :(<p className='no-active-message fs-3 text-dark'>Non Active</p>)}
+        
+        <img src={props.imagesrc} alt='' className={props.active ? ("card-img-top") : ("card-img-top no-active-image")} />
       </div>
       <div className='box-over d-flex flex-row' >
         <div className='card-body box-over-item'></div>
-        <div className='box-over-item-white px-4 py-3'>
+        <div className={props.active ? ('box-over-item-white px-4 py-3 box-over-active') : ('box-over-item-white px-4 py-3 no-active')}>
           <h4 className='card-title'>{props.title}</h4>
           <h5 className='card-title'>{props.address}</h5>
         </div>
       </div>
-      <div className='card-body text-dark'>
-        <p className='card-text text-secondary pt-4 text-justify'>
+      <div className='card-body'>
+        <p className='card-text pt-4 text-justify'>
           {props.text}
         </p>
+        
         <div className="d-flex flex-row flex-wrap">
           
           {/* > PERMISSION CARD  */}
             <PermissionCard 
+              
               class="fa-solid fa-dumbbell text-primary fs-4"
               text="Salle de Sport"
             />
           {/* < PERMISSION CARD  */}
 
-                    {/* > PERMISSION CARD  */}
-                    <PermissionCard 
+          {/* > PERMISSION CARD  */}
+            <PermissionCard 
               class="fa-solid fa-dumbbell text-primary fs-4"
               text="Salle de Sport"
             />
@@ -60,6 +64,7 @@ const CardUI = (props) => {
 
         <div className='d-flex justify-content-between px-4'>
           <small>{props.email}</small>
+          <small>{props.active}</small>
           <a href={props.link} className='btn btn-outline-success'>
             Go  
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-down-right-circle ms-2" viewBox="0 0 16 16">

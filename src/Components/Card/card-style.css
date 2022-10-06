@@ -42,9 +42,33 @@
 }
 
 .box-over-item-white{
-  background-color: white;
   width: 70%;
   height: 50px;
   position: inherit;
   top: -48px;
+}
+
+.box-over-active{
+  background-color: white;
+}
+
+.no-active{
+  background-color: rgb(218, 217, 217);
+  color: rgb(113, 113, 113);
+}
+
+.no-active-image{
+  opacity: 20%;
+}
+
+.image-container{
+  position: relative;
+}
+
+.no-active-message{
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+
 }
