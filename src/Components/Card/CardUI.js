@@ -7,17 +7,19 @@ const CardUI = (props) => {
     <div className={props.active ? ('card shadow') : ('card shadow no-active')}>
       <div className="overflow image-container">
         {props.active ? ("") :(<p className='no-active-message fs-3 text-dark'>Non Active</p>)}
-        
         <img src={props.imagesrc} alt='' className={props.active ? ("card-img-top") : ("card-img-top no-active-image")} />
+      </div>
+      <div>
+
       </div>
       <div className='box-over d-flex flex-row' >
         <div className='card-body box-over-item'></div>
         <div className={props.active ? ('box-over-item-white px-4 py-3 box-over-active') : ('box-over-item-white px-4 py-3 no-active')}>
           <h4 className='card-title'>{props.title}</h4>
-          <h5 className='card-title'>{props.address}</h5>
         </div>
       </div>
       <div className='card-body'>
+        <h5 className='text-center'>{props.address}</h5>
         <p className='card-text pt-4 text-justify'>
           {props.text}
         </p>
